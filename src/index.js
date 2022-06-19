@@ -11,10 +11,10 @@ const userController = require("./controller/user.controller")
 //const addtoCartController = require("./controller/adToCartController")
 const vegitableController = require("./controller/veg.Contr")
 const userControllerrr = require("./controller/userrr.controller")
-const vegetableCartController = require("./controller/vegetablecart.Controller")
+//const vegetableCartController = require("./controller/vegetablecart.Controller")
 
 app.use("/collection", userControllerrr)
-app.use("/vegetablecart",vegetableCartController)
+//app.use("/vegetablecart",vegetableCartController)
 
 app.use("/softdrink", userController)
 app.use("/veg", vegitableController)
