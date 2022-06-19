@@ -10,11 +10,7 @@ app.use(cors());
 
 const userController = require("./controller/user.controller")
 const vegitableController = require("./controller/veg.Contr")
-const userControllerrr = require("./controller/userrr.controller")
-const vegetableCartController = require("./controller/vegetablecart.Controller")
 
-app.use("/collection", userControllerrr)
-app.use("/vegetablecart",vegetableCartController)
 
 
 app.use("/softdrink", userController)
