@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const connect = require("./configs/db");
 const app = express();
-const port = process.env.Port ||7005
+const port = process.env.PORT ||7005
 
 app.use(express.json())
 app.use(cors());
@@ -19,7 +19,7 @@ app.use("/vegetablecart",vegetableCartController)
 app.use("/softdrink", userController)
 app.use("/veg", vegitableController)
 app.use("/addtocart", addtoCartController)
-
+ 
 
 
 app.listen(port, async () => {
