@@ -6,7 +6,7 @@ const port = process.env.PORT ||7005
 
 app.use(express.json())
 app.use(cors());
-//const addtoCartController = require("./controller/adToCartController")
+const addtoCartController = require("./controller/adToCartController")
 
 const userController = require("./controller/user.controller")
 const vegitableController = require("./controller/veg.Contr")
@@ -15,7 +15,7 @@ const vegitableController = require("./controller/veg.Contr")
 
 app.use("/softdrink", userController)
 app.use("/veg", vegitableController)
-//app.use("/addtocart", addtoCartController)
+app.use("/addtocart", addtoCartController)
  
 
 

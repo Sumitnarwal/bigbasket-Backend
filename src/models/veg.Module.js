@@ -19,4 +19,4 @@ const userSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("fruits", userSchema); 
+module.exports = mongoose.model("vegitable", userSchema); 

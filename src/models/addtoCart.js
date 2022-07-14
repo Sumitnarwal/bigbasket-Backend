@@ -4,8 +4,7 @@ const mongoose = require("mongoose");
 const userSchema = new mongoose.Schema(
   {
     imgUrl: { type: String, required: true },
-    iid: { type: Number, required: true },
-    
+    _id: { type: String, required: true },
     company: { type: String, required: true },
     title: { type: String, required: true },
     size: { type: Number, required: true },
